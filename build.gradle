@@ -53,7 +53,7 @@ tasks.withType(Test) {
     }
 }
 
-task selenide_android(type: Test) {
+task android(type: Test) {
     useJUnitPlatform {
         includeTags 'android'
     }
