@@ -1,6 +1,7 @@
 package com.annadach.tests;
 
 import io.appium.java_client.MobileBy;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.CollectionCondition.sizeGreaterThan;
@@ -12,6 +13,7 @@ import static io.qameta.allure.Allure.step;
 public class BrowserStackAndroidSelenideTests extends TestBase{
 
     @Test
+    @Tag("android")
     void searchTest() {
 
         step("Type search", () -> {
@@ -24,6 +26,7 @@ public class BrowserStackAndroidSelenideTests extends TestBase{
     }
 
     @Test
+    @Tag("android")
     void navTabTest() {
 
         step("Search nav-tab", () -> {
